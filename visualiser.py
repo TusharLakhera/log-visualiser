@@ -207,7 +207,7 @@ def analyze_logs():
     return jsonify({"response": "response_text","image":"image_response"})
 
 @app.route('/errorInsights', methods=['POST'])
-def analyze_logs():
+def error_insights():
     data = request.get_json()
 
     if not data:
